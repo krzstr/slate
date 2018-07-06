@@ -114,7 +114,13 @@ body {
     text-transform: uppercase;
   }
 
-  h5, h6 {
+  h5 {
+    @extend %header-font;
+    font-size: 10em;
+    text-transform: uppercase;
+  }
+
+  h6 {
     text-transform: uppercase;
   }
 
@@ -140,6 +146,8 @@ body {
   aside.warning:before {
     @extend %icon-exclamation-sign;
   }
+
+  aside.getmethod:before
 
   aside.success:before {
     @extend %icon-ok-sign;
